@@ -6,12 +6,12 @@ h2 Workers
 
 script#master-template(type='text/template')
   .stats
-    span.stat.cpus
-      strong cpus
-      em {master.os.cpus}
     span.stat.restarts
       strong restarts
       em {master.stats.restarts}
+    span.stat.cpus
+      strong workers / cpus
+      em {master.workers} / {master.os.cpus}
     span.stat.workers
       strong workers
       em spawned {master.stats.workersSpawned}, 
