@@ -14,8 +14,8 @@ script#master-template(type='text/template')
       em {master.workers} / {master.os.cpus}
     span.stat.workers
       strong workers
-      em spawned {master.stats.workersSpawned}, 
-      em deaths {master.stats.workersKilled}
+      em {master.stats.workersSpawned} spawned, 
+      em {master.stats.workersKilled} deaths
 
 script#worker-template(type='text/template')
   .worker
