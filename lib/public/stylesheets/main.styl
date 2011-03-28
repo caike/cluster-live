@@ -119,27 +119,31 @@ input[type='submit']
     color white
 
 a.action
+  border()
+  bg = white
   font-family arial
   font-size 14px
-  border-radius 10px
-  background light
   color dark
   &:hover
-    background lighten(light, 5%)
+    background darken(bg, 2%)
   &:active
-    background lighten(light, 5%)
-    box-shadow 1px 1px 2px rgba(black, 0.2) inset
+    background darken(bg, 5%)
 
 h2
   position relative
   .actions
     absolute top 0 right 0
     .action
-      margin 0 3px
       &#add-worker
       &#remove-worker
         display inline-block
-        width 22px
+        width 25px
         height 20px
         text-align center
         line-height 20px
+      &#add-worker
+        border-left 1px solid rgba(white, 0.4)
+        border-radius 0 10px 10px 0
+      &#remove-worker
+        border-right 1px solid rgba(black, 0.075)
+        border-radius 10px 0 0 10px
