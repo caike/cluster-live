@@ -1,6 +1,7 @@
 
 @import 'vendor'
 @import 'buttons'
+@import 'positions'
 
 // colors
 
@@ -14,20 +15,16 @@ dark = #626262
 border()
   border 1px solid light
 
-absolute(pos...)
-  position absolute
-  {pos[0]} pos[1]
-  {pos[2]} pos[3]
-
 // styles
 
 html
   border-top 5px solid light
 
 body
+  position relative
   margin 0
   padding 50px
-  font 14px/1.4 'Helvetica Neue', Helvetica, Arial Geneva, sans-serif
+  font 12px/1.4 'Helvetica Neue', Helvetica, Arial Geneva, sans-serif
   border-top 1px solid darken(light, 10%)
   color mid
 
@@ -90,3 +87,14 @@ input[type='submit']
     color darken(light, 10%)
   em
     font-style normal
+
+.notification
+  background white
+  padding 10px 20px
+  fixed top 20px right 15px
+  transition opacity 1s
+  border-radius 5px
+  border()
+  opacity 0
+  &.show
+    opacity 1
