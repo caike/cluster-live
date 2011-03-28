@@ -15,6 +15,9 @@ dark = #626262
 border()
   border 1px solid light
 
+smooth()
+  -webkit-font-smoothing antialiased
+
 // styles
 
 html
@@ -29,12 +32,16 @@ body
   color mid
 
 h1, h2, h3
+  smooth()
   margin 10px 0
   color darken(dark, 30%)
 
 h2
   padding-bottom 10px
   border-bottom 1px solid light
+
+a
+  text-decoration none
 
 button
 a.button
@@ -110,3 +117,33 @@ input[type='submit']
     absolute top 45% left 0
     width 100%
     color white
+
+a.action
+  border()
+  bg = white
+  font-family arial
+  font-size 14px
+  color dark
+  &:hover
+    background darken(bg, 2%)
+  &:active
+    background darken(bg, 5%)
+
+h2
+  position relative
+  .actions
+    absolute top 0 right 0
+    .action
+      &#add-worker
+      &#remove-worker
+        display inline-block
+        width 25px
+        height 20px
+        text-align center
+        line-height 20px
+      &#add-worker
+        border-left 1px solid rgba(white, 0.4)
+        border-radius 0 10px 10px 0
+      &#remove-worker
+        border-right 1px solid rgba(black, 0.075)
+        border-radius 10px 0 0 10px
