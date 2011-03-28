@@ -120,8 +120,8 @@ input[type='submit']
 
 a.action
   font-family arial
+  font-size 14px
   border-radius 10px
-  padding 0 5px
   background light
   color dark
   &:hover
@@ -129,3 +129,17 @@ a.action
   &:active
     background lighten(light, 5%)
     box-shadow 1px 1px 2px rgba(black, 0.2) inset
+
+h2
+  position relative
+  .actions
+    absolute top 0 right 0
+    .action
+      margin 0 3px
+      &.add-worker
+      &.remove-worker
+        display inline-block
+        width 22px
+        height 20px
+        text-align center
+        line-height 20px
