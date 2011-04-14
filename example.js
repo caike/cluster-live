@@ -17,7 +17,7 @@ var server = http.createServer(function(req, res){
 // localhost:8888 (by default) is cluster-live 
 
 cluster(server)
-  .set('workers', 2)
+  .set('workers', 6)
   .use(cluster.debug())
   .use(cluster.repl(9999))
   .use(cluster.stats({ connections: true, requests: true }))
