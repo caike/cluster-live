@@ -3,6 +3,20 @@
 
   Realtime administration and statistics for cluster
 
+## Installation
+
+    $ npm install cluster-live
+
+## Examples
+
+ First start the example application and cluster-live:
+ 
+     $ node examples/basic.js
+
+  Visit _http://localhost:8888_ in your browser, and execute the following command to simulate some requests:
+  
+     $ watch --interval=0.1 curl http://localhost:3000/
+
 ## Screenshots
 
 ![request graphs](http://f.cl.ly/items/0E0e0Q1a3j1r3r353G1Y/Screenshot.png)
