@@ -11,6 +11,8 @@ var server = http.createServer(function(req, res){
   res.end('Hello World');
 });
 
+// $ npm install express cluster socket.io
+
 // localhost:3000 is our server
 // localhost:8888 (by default) is cluster-live 
 
