@@ -3,6 +3,10 @@
 
   Realtime administration and statistics for cluster
 
+## Screenshots
+
+![request graphs](http://cl.ly/5zjY/Screenshot.png)
+
 ## License 
 
 (The MIT License)
