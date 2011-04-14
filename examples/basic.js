@@ -5,7 +5,7 @@
 
 var http = require('http')
   , cluster = require('cluster')
-  , live = require('./');
+  , live = require('../');
 
 var server = http.createServer(function(req, res){
   res.end('Hello World');
