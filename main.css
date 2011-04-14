@@ -1,0 +1,25 @@
+body {
+  padding: 50px 80px;
+  font: 14px / 1.5 helvetica, arial, sans-serif;
+}
+p {
+  margin: 35px 0;
+  width: 600px;
+}
+a {
+  color: #00c3ff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+#screenshot {
+  height: 800px;
+  width: 850px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 5px 1px #eee;
+}
+#screenshot img {
+  margin-top: -100px;
+}
+
