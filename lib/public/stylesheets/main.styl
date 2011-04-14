@@ -95,16 +95,17 @@ input[type='submit']
   em
     font-style normal
 
-.notification
-  background white
-  padding 10px 20px
-  fixed top 20px right 15px
-  transition opacity 1s
-  border-radius 5px
-  border()
-  opacity 0
-  &.show
-    opacity 1
+#notifications
+  fixed top 15px right 20px
+  li
+    background white
+    margin-bottom 10px
+    padding 10px 20px
+    transition opacity 1s
+    border-radius 5px
+    list-style none
+    border()
+    box-shadow 0 2px 10px 1px rgba(black, 0.1)
 
 .overlay
   absolute top 0 left 0

@@ -1,6 +1,10 @@
 h2 Master
 #master
 
+ul#notifications
+  li worker #5 killed
+  li worker #5 spawned
+
 h2 
   | Workers
   .actions
@@ -42,9 +46,6 @@ script#worker-template(type='text/template')
 script#request-template(type='text/template')
   span.method {request.method}
   span.url {request.url}
-
-script#notification-template(type='text/template')
-  span.message {notification.message}
 
 script#overlay-template(type='text/template')
   .overlay
