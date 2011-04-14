@@ -5,7 +5,7 @@
 
 ## Screenshots
 
-![request graphs](http://cl.ly/5zjY/Screenshot.png)
+![request graphs](http://f.cl.ly/items/0E0e0Q1a3j1r3r353G1Y/Screenshot.png)
 
 ## License 
 
