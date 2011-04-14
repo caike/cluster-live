@@ -8,6 +8,7 @@ var http = require('http')
   , live = require('./');
 
 var server = http.createServer(function(req, res){
+  if (Math.random() > 0.95) throw new Error('something broke!');
   res.end('Hello World');
 });
 
