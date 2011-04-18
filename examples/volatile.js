@@ -21,7 +21,7 @@ cluster(server)
   .set('workers', 6)
   .use(cluster.debug())
   .use(cluster.repl(9999))
-  .use(cluster.stats({ connections: true, requests: true }))
+  .use(cluster.stats({ connections: true, lightRequests: true }))
   .use(live())
   .listen(3000);
 
