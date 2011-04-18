@@ -20,7 +20,7 @@
        .use(live())
        .listen(3000);
 
- Optionally a `port`, `host` and TLS `options` options may be used to customize and secure the cluster-live server.
+ Optionally a `port`, `host` and TLS `options` options may be used to customize and secure the cluster-live server. To run in production set `NODE_ENV=production`, and add a `user` / `pass` for the basicAuth middleware.
  
 ## Examples
 
