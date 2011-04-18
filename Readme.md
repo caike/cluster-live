@@ -7,6 +7,21 @@
 
     $ npm install cluster-live
 
+## Usage
+
+ Cluster live requires that `stats()` is `use()`ed, enabling connection and "light request" statistics. The `lightRequests` option simply enables light-weight request statistics better suited for realtime reporting.
+
+     var live = require('cluster-live');
+     
+     cluster(server)
+       .set('workers', 6)
+       .use(cluster.debug())
+       .use(cluster.stats({ connections: true, lightRequests: true }))
+       .use(live())
+       .listen(3000);
+
+ Optionally a `port`, `host` and TLS `options` options may be used to customize and secure the cluster-live server.
+ 
 ## Examples
 
  First start the example application and cluster-live:
