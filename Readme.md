@@ -9,9 +9,9 @@
 
 ## Usage
 
- Cluster live requires that `stats()` is `use()`ed, enabling connection and "light request" statistics. The `lightRequests` option simply enables light-weight request statistics better suited for realtime reporting.
+ Cluster live requires that `stats()` is used, enabling connection and "light request" statistics. The `lightRequests` option simply enables light-weight request statistics better suited for realtime reporting.
 
-     var live = require('cluster-live');
+     var cluster = require('cluster'), live = require('cluster-live');
      
      cluster(server)
        .set('workers', 6)
